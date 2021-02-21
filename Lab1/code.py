@@ -50,4 +50,4 @@ print(mainTable)
 print("Y_ет =", y_et)
 
 ind_solve = crit.index(max(crit))
-print("Вираз, який задовольняє критерію вибору max(Y-Y_et)^2:\ny = {}+{}*{}+{}*{}+{}*{}".format(a0, a1, x1[ind_solve], a2, x2[ind_solve], a3, x3[ind_solve]))
+print("Вираз, який задовольняє критерію вибору max((Y-Y_et)^2):\ny = {}+{}*{}+{}*{}+{}*{}".format(a0, a1, x1[ind_solve], a2, x2[ind_solve], a3, x3[ind_solve]))
