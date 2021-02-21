@@ -27,7 +27,8 @@ Y =a0 + a1 X1 + a2 X2 + a3 X3,
  
 ### Лістинг програми:
 
-```import prettytable
+```python
+from prettytable import PrettyTable
 from random import random
 
 
@@ -80,7 +81,7 @@ print(mainTable)
 print("Y_ет =", y_et)
 
 ind_solve = crit.index(max(crit))
-print("Вираз, який задовольняє критерію вибору max((Y-Y_et)^2):\ny = {}+{}*{}+{}*{}+{}*{}".format(a0, a1, x1[ind_solve], a2, x2[ind_solve], a3, x3[ind_solve]))
+print("Функція відгуку та точка, які задовольняють критерію вибору max((Y-Y_et)^2):\nX1 = {}, X2 = {}, X3 = {}\nY = {}".format(x1[ind_solve], x2[ind_solve], x3[ind_solve], y[ind_solve]))
 ```
 
 
