@@ -21,8 +21,8 @@ Y =a0 + a1 X1 + a2 X2 + a3 X3,
 4) Знайти точку плану, що задовольняє критерію вибору оптимальності (див. табл.1). Варіанти обираються по номеру в списку в журналі викладача.   
 
 
-Варіанти завдання 105:
-![Program-result](https://github.com/Re1NForceD/MND/blob/main/Lab1/variant.png?raw=true)
+#### Варіанти завдання 105:
+![variant](https://github.com/Re1NForceD/MND/blob/main/Lab1/variant.png?raw=true)
 
  
 ### Лістинг програми:
@@ -80,7 +80,7 @@ print(mainTable)
 print("Y_ет =", y_et)
 
 ind_solve = crit.index(max(crit))
-print("Вираз, який задовольняє критерію вибору max(Y-Y_et)^2:\ny = {}+{}*{}+{}*{}+{}*{}".format(a0, a1, x1[ind_solve], a2, x2[ind_solve], a3, x3[ind_solve]))
+print("Вираз, який задовольняє критерію вибору max((Y-Y_et)^2):\ny = {}+{}*{}+{}*{}+{}*{}".format(a0, a1, x1[ind_solve], a2, x2[ind_solve], a3, x3[ind_solve]))
 ```
 
 
