@@ -1,5 +1,6 @@
 from prettytable import PrettyTable
-from random import random
+from random import random, randint
+from time import time
 
 def func(x, y, z): return round(a0+a1*x+a2*y+a3*z, 3)
 
@@ -11,10 +12,12 @@ def get_dx(x, x0, round_n): return round(max(x) - x0, round_n)
 
 def get_xN(x, x0, dx, round_n): return map(lambda x: round((x-x0)/dx, round_n), x)
 
-a0 = 1
-a1 = 2
-a2 = 3
-a3 = 4
+start = time()
+
+a0 = randint(10, 30)
+a1 = randint(10, 30)
+a2 = randint(10, 30)
+a3 = randint(10, 30)
 
 x1 = gen_X(20, 3, 8)
 x2 = gen_X(20, 3, 8)
@@ -51,3 +54,4 @@ print("Y_ет =", y_et)
 
 ind_solve = crit.index(max(crit))
 print("Функція відгуку та точка, які задовольняють критерію вибору max((Y-Y_et)^2):\nX1 = {}, X2 = {}, X3 = {}\nY = {}".format(x1[ind_solve], x2[ind_solve], x3[ind_solve], y[ind_solve]))
+print("\nЧас виконання програми: {} мc".format(int((time() - start)*1000)))
